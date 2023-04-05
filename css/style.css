@@ -116,12 +116,12 @@ footer{
     color:#fff;
     font-family: 'hasubi' !important;
     font-size: 30px;
-    transition: all 500ms;
+    transition: all 0.5s;
 }
 
 .normal{
     color:#fff;
     font-family: 'hasubi' !important;
     font-size: 30px;
-    transition: all 500ms;
+    transition: all 0.5s;
 }
