@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="landing">
+        <div class="landing--text">
+            <h1>Morse Code</h1>
+        </div>
+        <!-- <div class="scrollani"></div> -->
+    </section>
+    
+    <section class="info">
+        <div  class="info--subclass">
+            <h1>More About Morse Code</h1>
+        </div>
+        <div class="try" id="myDiv" onclick="typeWriter(), hideDiv()">Click me To Learn More!</div>
+        <div class="info--text">
+
+           <p id="demo"></p>
+</div>
+    </section>
+
+    <section class="grid">
+
+        <div class="card">A</div>
+        <div class="card">B</div>
+        <div class="card">C</div>
+        <div class="card">D</div>
+        <div class="card">E</div>
+        <div class="card">F</div>
+        <div class="card">G</div>
+        <div class="card">H</div>
+        <div class="card">I</div>
+        <div class="card">J</div>
+        <div class="card">K</div>
+        <div class="card">L</div>
+        <div class="card">M</div>
+        <div class="card">N</div>
+        <div class="card">O</div>
+        <div class="card">P</div>
+        <div class="card">Q</div>
+        <div class="card">R</div>
+        <div class="card">S</div>
+        <div class="card">T</div>
+        <div class="card">U</div>
+        <div class="card">V</div>
+        <div class="card">W</div>
+        <div class="card">X</div>
+        <div class="card">Y</div>
+        <div class="card">Z</div>
+    </section>
+
+    <footer>
+        <div class="contain">
+        <h3 class="morse">A series of dots and dashes is Morse code. <br>But<br> A series of sobs and tears is re-Morse code.</h3>
+        <h3 class="morse">Thanks for visiting my page</h3>
+        <h3 class="normal">Free download fonts at http://sharefonts.net</h3>
+    </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    const element = document.getElementById('#test');
+    var i = 0;
+    var txt = 'Morse code is a communication system that uses a series of dots, dashes, and spaces to represent letters, numbers, and other characters. It was invented by Samuel Morse in the early 1830s as a means of transmitting messages over long distances via telegraph lines, Morse was an American inventor and artist who became interested in the idea of long-distance communication after a personal tragedy. In 1825, while traveling in Europe, he received a letter informing him that his wife had died. By the time he returned home to the United States, she had already been buried. This experience led him to develop a system for rapid communication that could prevent similar tragedies in the future, Morses system used a combination of electrical impulses and a code of dots and dashes to represent letters and numbers. The code was designed so that the most commonly used letters and numbers had the shortest codes, making it faster to transmit messages, Morse demonstrated his system in 1837 and it was quickly adopted by telegraph companies around the world,Morse code was widely used for telegraphy and other forms of communication throughout the 19th and early 20th centuries, and it played an important role in maritime and military communication during World War II. Today, Morse code is still used by some amateur radio operators and is recognized as a cultural heritage by UNESCO.';
+    var speed = 50;
+
+    function hideDiv() {
+        var div = document.getElementById("myDiv");
+        div.style.display = "none";
+    }
+
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    </script>

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'galaxy';
+    src: url(../fonts/26FGalaxySans-ObliqueVF.woff2) format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'hasubi';
+    src: url(../fonts/Hasubi-Mono[wght].ttf) format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'morse';
+    src: url(../fonts/ji-lizard.ttf) format('woff2-variations');
+}
+
+@font-face {
+    font-family: 'loo';
+    src: url(../fonts/LoomatticRegular-EaxaW.ttf) format('woff2-variations');
+}
